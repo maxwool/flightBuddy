@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-left {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header-right img.linkedin-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.App-header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+}
+
+select {
+    font-size: 1.2em; /* Increased font size */
+    padding: 10px; /* Added padding for better usability */
+    margin: 10px; /* Added margin for spacing */
+}
+
+.FlightSearch-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.FlightSearch-input {
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+.FlightSearch-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.FlightSearch-button:hover {
+    background-color: #003366;
+}
+
+.FlightSearch-output {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.FlightSearch-error {
+    color: red;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
