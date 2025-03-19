@@ -83,6 +83,28 @@ select {
     margin-top: 10px;
 }
 
+.FlightSearch-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.FlightSearch-option {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.FlightSearch-option:hover {
+    background-color: #d0d0d0;
+}
+
 footer {
     background-color: #004080;
     color: white;

@@ -11,8 +11,7 @@ The Flight Tracker App is a React application that allows users to search for fl
 ```
 flight-tracker-app
 ├── public
-│   ├── index.html          # Main HTML file
-│   └── favicon.ico         # Favicon for the application
+│   └── index.html          # Main HTML file
 ├── src
 │   ├── components
 │   │   └── FlightSearch.tsx # Component for searching flights

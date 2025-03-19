@@ -71,15 +71,14 @@ const FlightSearch: React.FC = () => {
           {error && <p className="FlightSearch-error">{error}</p>}
           {flightData.length > 0 && (
             <div className="FlightSearch-output">
-              <ul>
+              <div className="FlightSearch-options">
                 {flightData.map((flight: any, index: number) => (
-                  <li key={index}>
-                    <button onClick={() => handleFlightSelection(flight)}>
-                      {flight.flight.iata} - {flight.departure.airport} to {flight.arrival.airport} ({formatLocalTime(flight.departure.estimated || flight.departure.actual || flight.departure.scheduled)})
-                    </button>
-                  </li>
+                  <div key={index} className="FlightSearch-option" onClick={() => handleFlightSelection(flight)}>
+                    <p>{flight.flight.iata} - {flight.departure.airport} to {flight.arrival.airport}</p>
+                    <p>{formatLocalTime(flight.departure.estimated || flight.departure.actual || flight.departure.scheduled)}</p>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           )}
           {searchAttempted && flightData.length === 0 && !error && (
