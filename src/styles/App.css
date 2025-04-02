@@ -1,8 +1,16 @@
+/* Import the Toroka font */
+@import url('https://fonts.googleapis.com/css2?family=B612:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f4f8;
+    font-family: 'B612', Arial, sans-serif; /* Apply B612 font */
+    background: url('../../public/images/background.png') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 header {
@@ -27,8 +35,19 @@ header {
 .App {
     text-align: center;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.App-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    transition: all 0.3s ease-in-out; /* Added transition for smooth resizing */
 }
 
 .App-header {
@@ -78,6 +97,21 @@ select {
     margin-top: 20px;
 }
 
+.FlightSearch-output button {
+    background-color: #004080; /* Same as the search button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.FlightSearch-output button:hover {
+    background-color: #003366; /* Same hover effect as the search button */
+}
+
 .FlightSearch-error {
     color: red;
     margin-top: 10px;
@@ -103,6 +137,12 @@ select {
 
 .FlightSearch-option:hover {
     background-color: #d0d0d0;
+}
+
+.FlightSearch-timezone {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
 }
 
 footer {
